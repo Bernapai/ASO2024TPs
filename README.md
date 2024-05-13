@@ -14,5 +14,21 @@ lo que indica que incluso pequeñas modificaciones en el código pueden tener un
 
 
 
+2a)// Declaración e inicialización de la variable de turno
+int turno = 0;
+
+// Bucle para asegurar la equidad en la distribución de hamburguesas
+while (turno != (int)tid) {
+}
+
+// Sección crítica: aquí se distribuyen las hamburguesas
+
+
+// Actualización del turno para el siguiente hilo
+turno = (turno + 1) % NUMBER_OF_THREADS;
+
+
+
+
 
 

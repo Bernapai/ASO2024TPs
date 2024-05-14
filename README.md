@@ -14,7 +14,8 @@ lo que indica que incluso pequeñas modificaciones en el código pueden tener un
 
 
 
-2a)#include <pthread.h>
+2a)
+#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h> // para usar intptr_t
@@ -84,6 +85,9 @@ int main(int argc, char *argv[])
     printf("Todos los hilos han terminado. Adios!\n");
     return 0; // Finalizar el programa
 }
+
+    
+
 
 
 

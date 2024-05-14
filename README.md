@@ -87,6 +87,9 @@ int main(int argc, char *argv[])
     return 0; // Finalizar el programa
 }
 
+
+2b)
+
     
 
 

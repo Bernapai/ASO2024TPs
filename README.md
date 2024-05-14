@@ -15,6 +15,7 @@ lo que indica que incluso pequeñas modificaciones en el código pueden tener un
 
 
 2a)
+```c
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

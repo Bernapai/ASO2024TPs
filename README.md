@@ -82,7 +82,8 @@ int main(int argc, char *argv[])
 
 
 2b)
-<img width="866" alt="image" src="https://github.com/Bernapai/ASO2024TPs/assets/132232663/cee9d232-c19b-45cc-b8bc-88bae2a36963">
+![image](https://github.com/Bernapai/ASO2024TPs/assets/132232663/069adc12-a242-4ba4-8c50-8c345a0163f9)
+
 
 
 

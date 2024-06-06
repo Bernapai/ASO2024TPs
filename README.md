@@ -81,7 +81,9 @@ int main(int argc, char *argv[])
 }
 
 
-2b)![Captura de pantalla TP3](TP3/Captura%20de%20pantalla%202024-05-14%20184542.png)
+2b)
+<img width="866" alt="image" src="https://github.com/Bernapai/ASO2024TPs/assets/132232663/cee9d232-c19b-45cc-b8bc-88bae2a36963">
+
 
 
     

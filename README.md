@@ -6,11 +6,15 @@ En el segundo código, las partes del programa se ejecutan una después de otra,
 
 1B)Si comparas el tiempo que toma ejecutar los dos códigos, es probable que el primer código, que utiliza subprocesos y termine más rápido que el segundo código, que ejecuta las tareas secuencialmente. Sin embargo, el tiempo exacto puede variar dependiendo de varios factores,como el sistema en el que se ejecuta el código y cómo está gestionando el sistema operativo los recursos de la computadora.
 
-1C)Durante la primera serie de ejecuciones, sin el retraso adicional en las operaciones del acumulador, las acciones de suma y resta probablemente se superpusieron, lo que hizo que las ejecuciones fueran más rápidas y menos predecibles en términos de tiempo.
-En la segunda serie de ejecuciones, al introducir un tiempo de espera adicional en cada iteración del bucle, las acciones de suma y resta se ralentizaron significativamente. 
-Esto condujo a una marcada prolongación del tiempo total de ejecución en comparación con las ejecuciones anteriores sin el retraso.
-En resumen, al introducir deliberadamente un retraso en el código, se prolongó significativamente el tiempo de ejecución de cada serie de operaciones,
-lo que indica que incluso pequeñas modificaciones en el código pueden tener un impacto considerable en el rendimiento del programa.
+1C (corregido) :Durante la primera serie de ejecuciones, sin el retraso adicional en las operaciones del acumulador, las acciones de suma y resta probablemente se superpusieron. Esto hizo que las ejecuciones fueran más rápidas pero también menos predecibles en términos de tiempo. La razón de esta falta de predictibilidad es que las operaciones concurrentes pueden provocar race conditions, donde varios hilos intentan acceder y modificar el mismo recurso al mismo tiempo sin control adecuado. Estas race conditions pueden llevar a resultados inesperados y tiempos de ejecución variables, ya que los hilos compiten por recursos compartidos en zonas críticas sin la debida sincronización.
+
+Cuando introdujimos un tiempo de espera adicional en cada iteración del bucle en la segunda serie de ejecuciones, las acciones de suma y resta se ralentizaron considerablemente. Este retraso permitió que cada operación se completara sin solapamientos, disminuyendo las race conditions y haciendo que el tiempo de ejecución fuera más predecible, aunque mucho más largo. En resumen, al meter a propósito un retraso en el código, no solo se prolongó bastante el tiempo de ejecución, sino que también se hizo más evidente la importancia de gestionar correctamente las zonas críticas. Esto muestra cómo incluso pequeños cambios en el código pueden tener un impacto significativo en el rendimiento del programa.
+
+
+
+
+
+
 
 
 
